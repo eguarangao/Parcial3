@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+   >
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="396dp"
+        android:layout_height="194dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="12dp"
+        android:background="#5313C6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="83dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="294dp"
+        android:background="#673AB7"
+        android:text="Imagen"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/MultiLine"
+        android:layout_width="362dp"
+        android:layout_height="223dp"
+        android:layout_below="@+id/imagen"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/txtPais"
+        android:layout_width="161dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imagen"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="29dp"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="64dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="21dp"
+        android:layout_toStartOf="@+id/txtPais"
+        android:background="#673AB7"
+        android:onClick="btnAceptar_Click"
+        android:text="Buscar"
+        android:textAlignment="center"
+        android:textSize="8sp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="341dp"
+        android:layout_height="184dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
